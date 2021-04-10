@@ -84,10 +84,15 @@ body {
 /**
  * Render the `main` element consistently in IE.
  */
-main {
+main,
+footer {
   display: block;
   margin: 0 auto;
   max-width: 1200px;
+}
+
+.social-link {
+  margin-right: 10px;
 }
 
 /**
@@ -813,7 +818,7 @@ textarea {
 }
 
 .hero {
-  background-image: url("https://acton.24-7.ro/wp-content/uploads/2021/04/cropped-acton12-1.png");
+  background-image: url("https://acton.24-7.ro/wp-content/uploads/2021/04/cropped-acton12.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -828,7 +833,11 @@ textarea {
 }
 
 p.site-title {
-  font-size: 5rem !important;
+  font-size: 4rem !important;
+}
+
+span.navbar-burger {
+  color: #fff;
 }
 
 #learn-more-button {

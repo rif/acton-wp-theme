@@ -11,24 +11,25 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'acton' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'acton' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'acton' ), 'acton', '<a href="http://fericean.ro">Radu Fericean</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+<footer id="colophon" class="site-footer">
+  <div class="site-info">
+    <div class="columns">
+      <div class="column is-three-quarters">
+        Strada Ariadna, nr. 32, Dumbravita, Timis - <a href="<?php echo site_url('/privacy-policy'); ?>">Privacy policy</a> - <a href="<?php echo site_url('/privacy-policy'); ?>">Cookies policy</a>
+      </div>
+      <div class="column">
+        <a class="social-link" target="_blank" href="https://www.facebook.com/actontimisoara">Facebook</a>
+        <a class="social-link" target="_blank" href="#">Instagram</a>
+        <a class="social-link" target="_blank" href="#">Twitter</a>
+      </div>
+    </div><!-- .columns -->
 
-<?php wp_footer(); ?>
 
-</body>
-</html>
+  </div><!-- .site-info -->
+</footer><!-- #colophon -->
+  </div><!-- #page -->
+
+  <?php wp_footer(); ?>
+
+                                                                                                                                                                                                          </body>
+                                                                                                                                                                                                                </html>
