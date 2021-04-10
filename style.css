@@ -87,8 +87,6 @@ body {
 main,
 footer {
   display: block;
-  margin: 0 auto;
-  max-width: 1200px;
 }
 
 .social-link {
@@ -738,9 +736,9 @@ textarea {
   }
 
   ul.sub-menu {
-  display: block;
-  margin-left: -40px;
-}
+    display: block;
+    margin-left: -40px;
+  }
 }
 
 #primary-menu {
@@ -764,6 +762,49 @@ textarea {
   color: #000;
   background-color: #fff;
   padding-bottom: 0px;
+}
+
+.entry-content>.wp-block-columns:first-child {
+  position: relative;
+  background-color: #fff;
+  margin-top: -330px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  z-index:3;
+}
+
+#mission-div {
+  background-color: #163a64;
+  padding:  425px 40px 40px 40px;
+  margin-top:-380px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+  position: relative;
+  z-index:2;
+}
+
+#mission-div p, #mission-div h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#mission-div h1 {
+  font-size: 3rem;
+}
+
+#mission-button {
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+figcaption {
+  text-align: center;
+}
+
+#metaslider-id-111 {
+  margin-top: -40px;
 }
 
 .site-main .comment-navigation,
