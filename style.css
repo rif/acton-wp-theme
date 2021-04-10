@@ -736,16 +736,16 @@ textarea {
     float: right;
     margin-top: 28px;
   }
+
+  ul.sub-menu {
+  display: block;
+  margin-left: -40px;
+}
 }
 
 #primary-menu {
   float: none;
   margin-top: 28px;
-}
-
-ul.sub-menu {
-  display: block;
-  margin-left: -40px;
 }
 
 .menu-item {
