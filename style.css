@@ -481,6 +481,10 @@ body {
   background: #fff;
 }
 
+strong {
+  color: inherit;
+}
+
 hr {
   background-color: #ccc;
   border: 0;
@@ -744,6 +748,10 @@ ul.sub-menu {
     display: block;
     margin-left: -40px;
   }
+}
+
+div.video-group iframe {
+  max-height: 200px;
 }
 
 #primary-menu {

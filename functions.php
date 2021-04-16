@@ -140,10 +140,9 @@ add_action( 'widgets_init', 'acton_widgets_init' );
  * Enqueue scripts and styles.
  */
 function acton_scripts() {
+    wp_enqueue_style( 'bulma-style', get_template_directory_uri() . '/bulma/bulma.min.css' );
 	wp_enqueue_style( 'acton-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'acton-style', 'rtl', 'replace' );
-
-    wp_enqueue_style( 'bulma-style', get_template_directory_uri() . '/bulma/bulma.min.css' );
 
     wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
 
