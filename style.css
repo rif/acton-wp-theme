@@ -744,10 +744,20 @@ ul.sub-menu {
     margin-top: 28px;
   }
 
+  a.questionnaire-button {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+  }
+
   ul.sub-menu {
     display: block;
     margin-left: -40px;
   }
+}
+
+div.modal-content iframe {
+  min-height: 2200px;
 }
 
 div.video-group iframe {
@@ -795,13 +805,24 @@ div.wp-block-columns:first-of-type {
 
 .entry-content>.mission {
   background-color: #163a64;
-  padding:  425px 40px 40px 40px;
-  margin-top:-350px;
+  padding:  40px;
+  margin-top:-45px;
   margin-left: auto;
   margin-right: auto;
   max-width: 85%;
   position: relative;
   z-index:2;
+}
+
+#border {
+  background-color: #163a64;
+  top: -77px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+  position: relative;
+  z-index: 99;
 }
 
 .last-group>.wp-block-column {
@@ -941,10 +962,17 @@ figcaption {
 }
 
 .hero {
-  background-image: url("https://acton.24-7.ro/wp-content/uploads/2021/04/cropped-acton12.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.hero.front-page {
+  background-image: url("https://acton.24-7.ro/wp-content/uploads/2021/04/acton12.png");
+}
+
+.hero.not-front-page {
+  background-image: url("https://acton.24-7.ro/wp-content/uploads/2021/04/acton11.jpg");
 }
 
 .custom-logo {

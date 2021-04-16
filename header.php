@@ -26,15 +26,15 @@
 
 <header id="masthead" class="site-header">
         <div class="site-branding">
-          <section class="hero is-fullheight is-info">
-            <div class="hero-head">
-              <nav class="navbar">
-                <div class="container is-fluid">
-                  <div class="navbar-brand">
-                    <a class="navbar-item">
-                      <?php the_custom_logo();?>
-                    </a>
-                  </div>
+                 <section class="hero is-info <?php echo is_front_page() ? 'is-fullheight front-page' : 'is-medium not-front-page' ?>">
+                              <div class="hero-head">
+                                       <nav class="navbar">
+                                                <div class="container is-fluid">
+                                                         <div class="navbar-brand">
+                                                                  <a class="navbar-item">
+<?php the_custom_logo();?>
+                                                                         </a>
+</div>
                       <nav id="site-navigation" class="main-navigation">
                         <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'acton' ); ?></button>
                         <?php
@@ -53,23 +53,22 @@
             <div class="hero-body">
               <div class="container has-text-centered">
                 <?php
-                if ( is_front_page() && is_home() ) :
-                ?>
-                  <h1 class="title has-text-weight-bold is-size-1 site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                <?php
-                else :
-                ?>
-                  <p class="title has-text-weight-bold is-size-1 site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-                <?php
-                endif;
-                $acton_description = get_bloginfo( 'description', 'display' );
-                if ( $acton_description || is_customize_preview() ) :
-                ?>
-                  <p class="subtitle is-size-2 site-description"><?php echo $acton_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-                <?php endif; ?>
-                <a href="#" id="learn-more-button" class="button is-large">Learn more</a>
-              </div>
-            </div>
-          </section>
-        </div><!-- .site-branding -->
-      </header><!-- #masthead -->
+                if ( is_front_page() ) :
+                    ?>
+                    <h1 class="title has-text-weight-bold is-size-1 site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+<?php $acton_description = get_bloginfo( 'description', 'display' );
+if ( $acton_description || is_customize_preview() ) :
+    ?>
+<p class="subtitle is-size-2 site-description">
+<?php echo $acton_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+       ?></p>
+<?php endif; ?>
+               <a href="#" id="learn-more-button" class="button no-border-radius is-large">Learn more</a>
+<?php endif; ?>
+
+                                                                                                     </div>
+                                                                                                           </div>
+                                                                                                                 </section>
+                                                                                                                       </div><!-- .site-branding -->
+                                                                                                                       </header><!-- #masthead -->
+                                                                                                                       <div id="border"></div>
