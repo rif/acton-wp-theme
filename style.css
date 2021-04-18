@@ -796,11 +796,26 @@ div.wp-block-columns:first-of-type {
 .entry-content>.wp-block-columns:first-child {
   position: relative;
   background-color: #fff;
-  margin-top: -100px;
+  margin-top: -101px;
   margin-left: auto;
   margin-right: auto;
   max-width: 90%;
   z-index:3;
+}
+
+body.blog main, body.single-post main {
+  position: relative;
+  background-color: #fff;
+  top: -77px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  z-index: 3;
+}
+
+body.single-post main {
+  display: block;
+  top: -87px;
 }
 
 .entry-content>.mission {
@@ -814,7 +829,7 @@ div.wp-block-columns:first-of-type {
   z-index:2;
 }
 
-#border {
+#border-header {
   background-color: #163a64;
   top: -77px;
   height: 20px;
@@ -822,16 +837,97 @@ div.wp-block-columns:first-of-type {
   margin-right: auto;
   max-width: 85%;
   position: relative;
-  z-index: 99;
+  z-index: 3;
+}
+
+#border-content {
+  position: relative;
+  background-color: #fff;
+  top: -77px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  z-index: 3;
+  height: 57px;
+}
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article.type-post {
+  padding: 5px;
+  background-color: #fff;
+  width: 400px;
+  margin: 10px;
+}
+
+#comments {
+  display: none;
+}
+
+article.type-post h2.entry-title{
+  font-family: freight-big-pro;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: .17em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1d1d1d;
+  -webkit-box-ordinal-group: 3;
+  -moz-box-ordinal-group: 3;
+  -ms-flex-order: 3;
+  -webkit-order: 3;
+  order: 3;
+}
+
+article.type-post div.entry-content p {
+  margin-bottom: 10px;
+  font-family: Arial,Helvetica,sans-serif;
+  letter-spacing: 0em;
+  font-family: freight-big-pro;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: .06em;
+  line-height: 1.6em;
+  text-transform: none;
+  color: #1d1d1d;
+  -webkit-box-ordinal-group: 5;
+  -moz-box-ordinal-group: 5;
+  -ms-flex-order: 5;
+  -webkit-order: 5;
+  order: 5;
+}
+
+article.type-post span.posted-on {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  letter-spacing: 0em;
+  font-family: freight-big-pro;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: .04em;
+  text-transform: none;
+  color: #1d1d1d;
+}
+
+article.type-post div.entry-meta{
+  font-size: .5rem;
+}
+
+footer.entry-footer span.comments-link {
+  display: none;
 }
 
 .last-group>.wp-block-column {
-  padding: 5px;
+  padding: 25px;
   margin: 0 30px;
-}
-
-.last-group>.wp-block-column strong, .last-group>.wp-block-column a.wp-block-button__link, .last-group>.wp-block-column p {
-  margin: 30px;
 }
 
 hr.wp-block-separator {

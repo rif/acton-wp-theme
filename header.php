@@ -71,4 +71,5 @@ if ( $acton_description || is_customize_preview() ) :
                                                                                                                  </section>
                                                                                                                        </div><!-- .site-branding -->
                                                                                                                        </header><!-- #masthead -->
-                                                                                                                       <div id="border"></div>
+                                                                                                                       <div id="border-header"></div>
+<div id="border-content"></div>
