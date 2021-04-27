@@ -16,7 +16,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-
+	<?php if ( is_home() ) : ?> <div id="posts"><?php endif; ?>
 		<?php
 		if ( have_posts() ) :
 
@@ -49,7 +49,7 @@ get_header();
 
 		endif;
 		?>
-
+<?php if ( is_home() ) : ?><div> <!-- #posts --><?php endif; ?>
 	</main><!-- #main -->
 
 <?php
