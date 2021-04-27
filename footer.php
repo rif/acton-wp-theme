@@ -14,13 +14,9 @@
 <footer id="colophon" class="site-footer">
   <div class="site-info">
     <div class="columns">
-      <div class="column is-three-quarters">
-        Strada Ariadna, nr. 32, Dumbravita, Timis - <a href="<?php echo site_url('/privacy-policy'); ?>">Privacy policy</a> - <a href="<?php echo site_url('/privacy-policy'); ?>">Cookies policy</a>
-      </div>
       <div class="column">
         <a class="social-link" target="_blank" href="https://www.facebook.com/actontimisoara">Facebook</a>
-        <a class="social-link" target="_blank" href="#">Instagram</a>
-        <a class="social-link" target="_blank" href="#">Twitter</a>
+        <a class="social-link" target="_blank" href="https://www.instagram.com/actontimisoara">Instagram</a>
       </div>
     </div><!-- .columns -->
 

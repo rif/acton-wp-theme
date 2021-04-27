@@ -63,7 +63,7 @@ if ( $acton_description || is_customize_preview() ) :
 <?php echo $acton_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
        ?></p>
 <?php endif; ?>
-               <a href="#" id="learn-more-button" class="button no-border-radius is-large">Learn more</a>
+               <a href="<?php echo esc_url( home_url( '/our-approach/' ) ); ?>" id="learn-more-button" class="button no-border-radius is-large">Learn more</a>
 <?php endif; ?>
 
                                                                                                      </div>

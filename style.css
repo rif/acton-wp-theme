@@ -90,6 +90,7 @@ footer {
 }
 
 .social-link {
+  color: #000;
   margin-right: 10px;
 }
 
@@ -855,12 +856,19 @@ body.single-post main {
 main {
   display: flex;
   flex-wrap: wrap;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.act-no-bottom-margin {
+  margin-bottom: 0;
 }
 
 article.type-post {
   padding: 5px;
   background-color: #fff;
-  width: 400px;
+  width: 300px;
   margin: 10px;
 }
 
@@ -1054,7 +1062,7 @@ figcaption {
 
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
-  disply: inline-block;
+  display: inline-block;
 }
 
 .hero {
