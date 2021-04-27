@@ -789,13 +789,10 @@ div.video-group iframe {
   padding-bottom: 0px;
 }
 
-div.wp-block-columns:first-of-type {
+div.wp-block-columns.first-group {
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
-}
-
-.entry-content>.wp-block-columns:first-child {
   position: relative;
   background-color: #fff;
   margin-top: -101px;
