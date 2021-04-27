@@ -745,11 +745,11 @@ ul.sub-menu {
     float: right;
     margin-top: 28px;
   }
-
+c
   a.questionnaire-button {
     background-color: transparent;
-    color: black;
-    border: 2px solid black;
+    color: #163a64;
+    border: 2px solid #163a64;
   }
 
   ul.sub-menu {
