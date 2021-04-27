@@ -746,16 +746,16 @@ ul.sub-menu {
     margin-top: 28px;
   }
 
-  a.questionnaire-button, a.questionnaire-button:visited {
-    background-color: transparent;
-    color: #163a64;
-    border: 2px solid #163a64;
-  }
-
   ul.sub-menu {
     display: block;
     margin-left: -40px;
   }
+}
+
+a.questionnaire-button, a.questionnaire-button:visited {
+  background-color: transparent;
+  color: #163a64;
+  border: 2px solid #163a64;
 }
 
 div.modal-content iframe {
