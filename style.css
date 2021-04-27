@@ -746,7 +746,7 @@ ul.sub-menu {
     margin-top: 28px;
   }
 
-  a.questionnaire-button {
+  a.questionnaire-button, a.questionnaire-button:visited {
     background-color: transparent;
     color: #163a64;
     border: 2px solid #163a64;
