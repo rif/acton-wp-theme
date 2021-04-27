@@ -87,6 +87,7 @@ body {
 main,
 footer {
   display: block;
+  padding: 0 30px;
 }
 
 a.social-link, a.social-link:visited {
@@ -814,7 +815,6 @@ body.blog main, body.single-post main {
 
 body.single-post main {
   display: block;
-  padding: 0 20px;
   top: -87px;
 }
 
