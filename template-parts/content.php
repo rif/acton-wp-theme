@@ -8,7 +8,9 @@
  */
 
 ?>
-
+<?php if ( is_singular() ) :?>
+                        <div id="singular">
+<?php endif;?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
@@ -62,3 +64,6 @@
 <!--<?php acton_entry_footer(); ?>-->
 </footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+<?php if ( is_singular() ) :?>
+</div> <!-- singular -->
+<?php endif;?>
