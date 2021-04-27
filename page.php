@@ -14,7 +14,9 @@
 
 get_header();
 ?>
-
+<?php if ( is_home() ) { ?>
+  <div id="posts">
+  <?php endif; ?>
 	<main id="primary" class="site-main">
 
 		<?php
@@ -30,7 +32,9 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
-
+<?php if ( is_home() ) { ?>
+  <div> <!-- #posts -->
+  <?php endif; ?>
 	</main><!-- #main -->
 
 <?php

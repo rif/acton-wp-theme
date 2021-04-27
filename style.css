@@ -814,6 +814,7 @@ body.blog main, body.single-post main {
 
 body.single-post main {
   display: block;
+  padding: 0 20px;
   top: -87px;
 }
 
@@ -851,10 +852,9 @@ body.single-post main {
 }
 
 
-main {
+#posts {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20px;
   justify-content: center;
 }
 
