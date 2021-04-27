@@ -89,9 +89,10 @@ footer {
   display: block;
 }
 
-.social-link {
+a.social-link, a.social-link:visited {
   color: #000;
   margin-right: 10px;
+  float: right;
 }
 
 /**
