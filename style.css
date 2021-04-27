@@ -857,7 +857,7 @@ body.single-post main {
 main {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 0 20px;
   justify-content: center;
 }
 
@@ -971,7 +971,13 @@ figcaption {
 }
 
 #metaslider-id-111 {
-  margin-top: -80px;
+  margin-top: -40px;
+}
+
+@media screen and (min-width: 37.5em) {
+  #metaslider-id-111 {
+    margin-top: -80px;
+  }
 }
 
 .site-main .comment-navigation,
